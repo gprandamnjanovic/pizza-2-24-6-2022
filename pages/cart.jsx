@@ -25,7 +25,7 @@ const Cart = () => {
   const createOrder = async (data) => {
     try {
       const res = await axios.post(
-        'https://pizza-goran-full-stack.herokuapp.com/api/orders',
+        'https://pizza-goran-22-6-2022.netlify.app/api/orders',
         data
       );
       if (res.status === 201) {

@@ -38,7 +38,7 @@ const Add = ({ setClose }) => {
         img: url,
       };
       await axios.post(
-        'https://pizza-goran-full-stack.herokuapp.com/api/products',
+        'https://pizza-goran-22-6-2022.netlify.app/api/products',
         newProduct
       );
       setClose(true);

@@ -126,10 +126,10 @@ export const getServerSideProps = async (ctx) => {
     };
   }
   const responseProduct = await axios.get(
-    'https://pizza-goran-full-stack.herokuapp.com/api/products'
+    'https://pizza-goran-22-6-2022.netlify.app/api/products'
   );
   const responseOrders = await axios.get(
-    'https://pizza-goran-full-stack.herokuapp.com/api/orders'
+    'https://pizza-goran-22-6-2022.netlify.app/api/orders'
   );
   return {
     props: {

@@ -9,13 +9,10 @@ const Login = () => {
   const router = useRouter();
   const handleClick = async () => {
     try {
-      await axios.post(
-        'https://pizza-goran-full-stack.herokuapp.com/api/login',
-        {
-          username,
-          password,
-        }
-      );
+      await axios.post('https://pizza-goran-22-6-2022.netlify.app/api/login', {
+        username,
+        password,
+      });
       router.push('/admin');
     } catch (error) {
       console.log(error);
