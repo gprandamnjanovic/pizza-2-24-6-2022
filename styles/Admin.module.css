@@ -1,0 +1,31 @@
+.container {
+  margin-top: 100px;
+  padding: 50px;
+  display: flex;
+}
+.title {
+  text-align: center;
+}
+.item {
+  flex: 1;
+}
+.table {
+  width: 100%;
+  border-spacing: 20px;
+}
+.trTitle {
+  text-align: center;
+}
+.btn {
+  border: none;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+.btn:first-child {
+  background: teal;
+  margin-right: 10px;
+}
+.btn:last-child {
+  background: crimson;
+}

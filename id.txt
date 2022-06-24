@@ -1,0 +1,7 @@
+ATTL8fDJKfGzXNH4VVuDy1qW4_Jm8S0sqmnUTeYtWpqxUJLnXIn90V8YIGDg-SNPaB70Hg4mko_fde4-
+
+
+https://paypal.github.io/react-paypal-js/?path=/docs/example-paypalbuttons--default
+
+slider-img : 1290x1080
+slall-img : 500x500
