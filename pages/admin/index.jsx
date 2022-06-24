@@ -125,12 +125,8 @@ export const getServerSideProps = async (ctx) => {
       },
     };
   }
-  const responseProduct = await axios.get(
-    'https://pizza-goran-22-6-2022.netlify.app/api/products'
-  );
-  const responseOrders = await axios.get(
-    'https://pizza-goran-22-6-2022.netlify.app/api/orders'
-  );
+  const responseProduct = await axios.get('http://localhost:3000/api/products');
+  const responseOrders = await axios.get('http://localhost:3000/api/orders');
   return {
     props: {
       orders: responseOrders.data,

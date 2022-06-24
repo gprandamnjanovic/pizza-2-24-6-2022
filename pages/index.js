@@ -29,9 +29,7 @@ export const getServerSideProps = async (ctx) => {
   if (myCookie.token === process.env.TOKEN) {
     admin = true;
   }
-  const response = await axios.get(
-    'https://pizza-goran-full-stack.herokuapp.com/api/products'
-  );
+  const response = await axios.get('http://localhost:3000/api/products');
   return {
     props: {
       pizzaList: response.data,

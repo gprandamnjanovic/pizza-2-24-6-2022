@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../styles/Orders.module.css';
-import Image from 'next/dist/client/image';
+import Image from 'next/image';
 import axios from 'axios';
 const Orders = ({ order }) => {
   const status = order.status;
@@ -112,9 +112,7 @@ const Orders = ({ order }) => {
   );
 };
 export const getServerSideProps = async ({ params }) => {
-  const response = await axios.get(
-    `https://pizza-goran-22-6-2022.netlify.app/orders/${params.id}`
-  );
+  const response = await axios.get(`http://localhost:3000/orders/${params.id}`);
   return {
     props: { order: response.data },
   };

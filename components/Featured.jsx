@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/Featured.module.css';
-import Image from 'next/dist/client/image';
+import Image from 'next/image';
 const Featured = () => {
   const images = [
     '/img/featured.png',

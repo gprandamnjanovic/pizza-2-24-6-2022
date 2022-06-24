@@ -9,7 +9,7 @@ const Login = () => {
   const router = useRouter();
   const handleClick = async () => {
     try {
-      await axios.post('https://pizza-goran-22-6-2022.netlify.app/api/login', {
+      await axios.post('http://localhost:3000/api/login', {
         username,
         password,
       });
