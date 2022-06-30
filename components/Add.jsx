@@ -37,7 +37,7 @@ const Add = ({ setClose }) => {
         extraOptions,
         img: url,
       };
-      await axios.post(process.env.BASE_URL + '/api/products', newProduct);
+      await axios.post(`${process.env.BASE_URL}/api/products`, newProduct);
       setClose(true);
     } catch (error) {
       console.log(error);

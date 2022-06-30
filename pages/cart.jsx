@@ -24,7 +24,7 @@ const Cart = () => {
 
   const createOrder = async (data) => {
     try {
-      const res = await axios.post(process.env.BASE_URL + '/api/orders', data);
+      const res = await axios.post(`${process.env.BASE_URL}/api/orders`, data);
       if (res.status === 201) {
         dispatch(reset());
         router.push(`/orders/${res.data._id}`);
@@ -159,8 +159,7 @@ const Cart = () => {
           {open ? (
             <PayPalScriptProvider
               options={{
-                'client-id':
-                  'Aca5mqc-gLmrzzSaLdp1wggMBZomnfnKytPcsbbo1vEDi_Y_AGtQZioeHvnjev4cUX2PGAS3e_7WH6qq',
+                'client-id': 'test',
                 components: 'buttons',
                 currency: 'USD',
               }}

@@ -113,7 +113,7 @@ const Orders = ({ order }) => {
 };
 export const getServerSideProps = async ({ params }) => {
   const response = await axios.get(
-    process.env.BASE_URL + `/orders/${params.id}`
+    `${process.env.BASE_URL}/orders/${params.id}`
   );
   return {
     props: { order: response.data },

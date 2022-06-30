@@ -1,12 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/Featured.module.css';
 import Image from 'next/image';
+import featured from '../public/img/featured.png';
+import featured2 from '../public/img/featured2.png';
+import featured3 from '../public/img/featured3.png';
+const data = [
+  {
+    id: 1,
+    img: featured,
+  },
+  {
+    id: 2,
+    img: featured2,
+  },
+  {
+    id: 3,
+    img: featured3,
+  },
+];
 const Featured = () => {
-  const images = [
-    '/img/featured.png',
-    '/img/featured2.png',
-    '/img/featured3.png',
-  ];
   const [index, setIndex] = useState(0);
 
   const handleArrow = (direction) => {
@@ -42,11 +54,25 @@ const Featured = () => {
         className={styles.wrapper}
         style={{ transform: `translateX(${-100 * index}vw)` }}
       >
-        {images.map((img, i) => (
+        {/* {data.map((image, i) => (
           <div className={styles.imgContainer} key={i}>
-            <Image src={img} alt='' layout='fill' objectFit='cover' />
+            <Image src={image} alt='' layout='fill' objectFit='cover' />
           </div>
-        ))}
+        ))} */}
+        <div className={styles.imgContainer}>
+          {data.map((item) => {
+            console.log(item);
+            return (
+              <Image
+                src={item.img}
+                alt=''
+                layout='fill'
+                objectFit='cover'
+                key={item.id}
+              />
+            );
+          })}
+        </div>
       </div>
       <div
         className={styles.arrowContainer}

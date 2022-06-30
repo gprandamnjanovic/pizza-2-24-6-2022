@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/Footer.module.css';
-import Image from 'next/dist/client/image';
+import Image from 'next/image';
 const Footer = () => {
   return (
     <div className={styles.container}>
